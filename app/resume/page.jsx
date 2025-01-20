@@ -26,7 +26,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores optio esse, aliquid expedita nobis ad vero facilis voluptatibus cumque tempore sequi, aspernatur inventore et.",
+    "Hello! I'm Obayomi Ayoola, a tech enthusiast with a passion for crafting digital experiences that leave a lasting impact. Whether it's designing elegant frontend interfaces or building powerful backend systems, I love turning ideas into innovative solutions. With a blend of creativity, precision, and two years of hands-on experience, I’m always ready to tackle the next big challenge and bring visions to life.",
   info: [
     {
       fieldName: "Name",
@@ -59,7 +59,7 @@ const education = {
   icon: "",
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus commodi reprehenderit, ab atque sapiente, iure ipsum expedita cum enim inventore consequatur velit accusantium nemo dolorem. Provident, quaerat ratione. Doloribus, nesciunt.",
+    "My educational journey reflects a strong foundation in technical and engineering principles, complemented by hands-on training in modern development technologies. This blend of academic and practical experience has equipped me to solve real-world challenges effectively.",
   items: [
     {
       institution: "University Of Lagos",
@@ -78,7 +78,7 @@ const skills = {
   icon: "",
   title: "My Skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus commodi reprehenderit, ab atque sapiente, iure ipsum expedita cum enim inventore consequatur velit accusantium nemo dolorem. Provident, quaerat ratione. Doloribus, nesciunt.",
+    "I bring a diverse skill set to the table, combining frontend and backend development expertise. My strengths lie in crafting responsive user interfaces, building scalable backend systems, and collaborating with teams to deliver exceptional digital experiences.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -128,7 +128,7 @@ const experience = {
   icon: "",
   title: "My Experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus commodi reprehenderit, ab atque sapiente, iure ipsum expedita cum enim inventore consequatur velit accusantium nemo dolorem. Provident, quaerat ratione. Doloribus, nesciunt.",
+    "I have honed my skills through diverse experiences in full-stack development and frontend engineering. From immersive bootcamps to industry roles, I have consistently delivered high-quality solutions that prioritize user experience and performance. My journey reflects a commitment to continuous learning and contributing effectively to dynamic teams.",
   items: [
     {
       company: "GoMyCode",

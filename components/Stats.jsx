@@ -1,26 +1,74 @@
 "use client";
 import CountUp from "react-countup";
 
-const stats = [
-  {
-    num: 2,
-    text: "Years Of Experience",
-  },
-  {
-    num: 4,
-    text: "Projects Completed",
-  },
-  {
-    num: 8,
-    text: "Technologies Mastered",
-  },
-  {
-    num: 200,
-    text: "Code Commits",
-  },
-];
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Stats = () => {
+  const [commits, setCommits] = useState(null);
+  const [repos, setRepos] = useState(null);
+
+  useEffect(() => {
+    const fetchGitHubData = async () => {
+      const username = "ayoolasam";
+      const token = process.env.NEXT_PUBLIC_API_TOKEN; // Optional for increased rate limits
+
+      try {
+        // Fetch repositories
+        const reposResponse = await axios.get(
+          `https://api.github.com/users/${username}/repos`,
+          {
+            headers: {
+              Authorization: `Bearer ${token}`,
+            },
+          }
+        );
+        const reposData = reposResponse.data;
+        setRepos(reposData.length);
+
+        // Calculate total commits across all repositories
+        let totalCommits = 0;
+        for (const repo of reposData) {
+          const commitsResponse = await axios.get(
+            `https://api.github.com/repos/${username}/${repo.name}/commits`,
+            {
+              headers: {
+                Authorization: `Bearer ${token}`,
+              },
+            }
+          );
+          const commitsData = commitsResponse.data;
+          totalCommits += commitsData.length;
+        }
+
+        setCommits(totalCommits);
+      } catch (error) {
+        console.error("Error fetching GitHub data:", error);
+      }
+    };
+
+    fetchGitHubData();
+  }, []);
+
+  const stats = [
+    {
+      num: 2,
+      text: "Years Of Experience",
+    },
+    {
+      num: repos,
+      text: "Projects Completed",
+    },
+    {
+      num: 15,
+      text: "Technologies Mastered",
+    },
+    {
+      num: commits,
+      text: "Code Commits",
+    },
+  ];
+
   return (
     <div className="container mx-auto">
       <div className="flex flex-wrap gap-8 mx-auto xl:max-w-none">

@@ -10,14 +10,18 @@ export default function Home() {
       <div className="container mx-auto h-full">
         <div className="flex flex-col-reverse xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 ">
           <div className=" text-center xl:text-left">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">
+              Frontend and Backend Node.js Developer
+            </span>
             <h1 className="h1">
               Hello I'm <br />
               <span className="text-accent">Obayomi Ayoola</span>
             </h1>
             <p className="max-w-[500px] mt-4 xl:mt-[10px] text-white/88">
-              I excel at crafting elegant digital experiences and i am
-              proficient in various prgramming Languages and technologies
+              I specialize in creating seamless digital experiences, with
+              expertise in both frontend and backend development using Node.js.
+              My passion lies in delivering high-quality, scalable, and
+              efficient solutions.
             </p>
             <div className="flex flex-col mt-4   xl:flex-row items-center gap-8">
               <Button

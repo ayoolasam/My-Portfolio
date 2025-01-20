@@ -8,14 +8,14 @@ const services = [
     num: "01",
     title: "Frontend Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt omnis suscipit beatae cum harum animi distinctio nisi hic deleniti ipsum tempore aut quia, numquam nemo impedit et vitae atque!",
+      "I specialize in creating responsive and dynamic user interfaces using modern frameworks like Vue.js, and Nuxt.js, React, Next.js. My focus is on delivering seamless user experiences with clean, maintainable code",
     href: "",
   },
   {
     num: "02",
     title: "Backend Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt omnis suscipit beatae cum harum animi distinctio nisi hic deleniti ipsum tempore aut quia, numquam nemo impedit et vitae atque!",
+      "With expertise in Node.js and Express, I build scalable and efficient backend systems. I ensure robust APIs and seamless integration with databases for end-to-end functionality in web applications.",
     href: "",
   },
 ];
@@ -53,7 +53,9 @@ const Services = () => {
                     <BsArrowDownRight className="text-primary text-3xl   " />
                   </Link>
                 </div>
-                <h2 className="text-[42px] font-bold leading-none hover:text-accent transition-all duration-500 text-white ">{service.title}</h2>
+                <h2 className="text-[42px] font-bold leading-none hover:text-accent transition-all duration-500 text-white ">
+                  {service.title}
+                </h2>
                 <p className="text-white/60">{service.description}</p>
                 <div className="border-b border-white/20 w-full"></div>
               </div>
