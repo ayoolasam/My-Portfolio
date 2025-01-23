@@ -11,57 +11,28 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { Description } from "@radix-ui/react-dialog";
+
 import Link from "next/link";
 import Image from "next/image";
-import WorkSliderBtns from '../../components/WorkSliderBtns'
+import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const Work = () => {
   const projects = [
     {
       num: "01",
-      category: "Frontend",
-      title: "Project 1",
+      category: "Full Stack",
+      title: "Event Management Platform",
       Description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt expedita amet, animi sapiente laborum! Hic temporibus praesentium accusamus at doloremque molestias quas?",
+        "A full-stack event management application designed to simplify the process of organizing, booking, and managing events. The platform features dedicated user and admin functionalities, offering seamless experiences for both event attendees and administrators. Users can explore upcoming events, register, and manage bookings, while administrators have tools to create, update, and monitor events effectively. Built with Nuxt.js, Tailwind CSS, Node.js, Express, and MongoDB, this application is responsive, secure, and performance-oriented. Deployed on Vercel for fast and reliable hosting.",
       stack: [
-        { name: "React" },
+        { name: "Nuxt.js" },
         { name: "Tailwind CSS" },
-        { name: "Framer Motion" },
+        { name: "Node.js" },
+        { name: "Express" },
       ],
-      image: "/",
-      live: "",
-      github: "",
-    },
-    {
-      num: "01",
-      category: "Frontend",
-      title: "Project 1",
-      Description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt expedita amet, animi sapiente laborum! Hic temporibus praesentium accusamus at doloremque molestias quas?",
-      stack: [
-        { name: "React" },
-        { name: "Tailwind CSS" },
-        { name: "Framer Motion" },
-      ],
-      image: "/",
-      live: "",
-      github: "",
-    },
-    {
-      num: "01",
-      category: "Frontend",
-      title: "Project 1",
-      Description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt expedita amet, animi sapiente laborum! Hic temporibus praesentium accusamus at doloremque molestias quas?",
-      stack: [
-        { name: "React" },
-        { name: "Tailwind CSS" },
-        { name: "Framer Motion" },
-      ],
-      image: "/",
-      live: "",
-      github: "",
+      image: "/assets/Screenshot (230).png",
+      live: "https://ayoolaevents.vercel.app",
+      github: "https://github.com/ayoolasam/event-management-nuxt",
     },
     {
       num: "02",
@@ -104,7 +75,10 @@ const Work = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1,transition:{delay:2.4,duration:0.4,ease:"easeIn"} }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
       className="min-h-[88vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container  mx-auto">
@@ -166,17 +140,16 @@ const Work = () => {
                     <div className="h-[460px] relative group flex bg-pink-50/20 justify-center items-center">
                       <div className=""></div>
                       <div className="relative w-full h-full">
-                        <Image
-                          src={item.image}
-                          fill
-                          className="object-cover"
-                        />
+                        <Image src={item.image} fill className="object-cover" />
                       </div>
                     </div>
                   </SwiperSlide>
                 );
               })}
-              <WorkSliderBtns btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all duration-500 " containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 x-20 w-full justify-between xl:w-max xl:justify-none "/>
+              <WorkSliderBtns
+                btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all z-20 duration-500 "
+                containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 x-20 w-full justify-between xl:w-max xl:justify-none "
+              />
             </Swiper>
           </div>
         </div>
