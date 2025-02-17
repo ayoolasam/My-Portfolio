@@ -30,39 +30,30 @@ const Work = () => {
         { name: "Node.js" },
         { name: "Express" },
       ],
-      image: "/assets/Screenshot (230).png",
+      image: "/assets/Screenshot (228).png",
       live: "https://ayoolaevents.vercel.app",
       github: "https://github.com/ayoolasam/event-management-nuxt",
     },
     {
       num: "02",
       category: "Frontend",
-      title: "Project 1",
-      Description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt expedita amet, animi sapiente laborum! Hic temporibus praesentium accusamus at doloremque molestias quas?",
-      stack: [
-        { name: "React" },
-        { name: "Tailwind CSS" },
-        { name: "Framer Motion" },
-      ],
-      image: "/",
-      live: "",
-      github: "",
+      title: "Trello Hotels Landing Page",
+      Description: "Designed and developed an elegant and conversion-focused landing page for a luxury hotel, aimed at attracting guests and driving bookings. The design combines modern aesthetics with intuitive functionality to create a seamless user experience.",
+      stack: [{ name: "React" }, { name: "CSS" }, ,],
+      image: "/assets/Screenshot (239).png",
+      live: "https://trello-teal-eta.vercel.app/",
+      github: "https://github.com/ayoolasam/trello",
     },
     {
       num: "03",
       category: "Frontend",
-      title: "Project 1",
+      title: "Natours Landing Page",
       Description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur incidunt expedita amet, animi sapiente laborum! Hic temporibus praesentium accusamus at doloremque molestias quas?",
-      stack: [
-        { name: "React" },
-        { name: "Tailwind CSS" },
-        { name: "Framer Motion" },
-      ],
-      image: "/",
-      live: "",
-      github: "",
+        "Designed and developed a visually captivating and user-friendly landing page for a tourism website, aimed at inspiring travelers and simplifying trip planning. The design features stunning imagery, intuitive navigation, and responsive layouts to ensure a seamless experience across devices.",
+      stack: [{ name: "React" }, { name: "CSS" }, ,],
+      image: "/assets/Screenshot (241).png",
+      live: "https://natours-self-beta.vercel.app/",
+      github: "https://github.com/ayoolasam/Natours",
     },
   ];
   const [project, setProject] = useState(projects[0]);
@@ -140,7 +131,12 @@ const Work = () => {
                     <div className="h-[460px] relative group flex bg-pink-50/20 justify-center items-center">
                       <div className=""></div>
                       <div className="relative w-full h-full">
-                        <Image src={item.image} fill className="object-cover" />
+                        <Image
+                          src={item.image}
+                          fill
+                          className="object-contain object-center"
+                          alt="project-image"
+                        />
                       </div>
                     </div>
                   </SwiperSlide>
