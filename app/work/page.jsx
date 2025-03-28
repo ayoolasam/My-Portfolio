@@ -38,7 +38,8 @@ const Work = () => {
       num: "02",
       category: "Frontend",
       title: "Trello Hotels Landing Page",
-      Description: "Designed and developed an elegant and conversion-focused landing page for a luxury hotel, aimed at attracting guests and driving bookings. The design combines modern aesthetics with intuitive functionality to create a seamless user experience.",
+      Description:
+        "Designed and developed an elegant and conversion-focused landing page for a luxury hotel, aimed at attracting guests and driving bookings. The design combines modern aesthetics with intuitive functionality to create a seamless user experience.",
       stack: [{ name: "React" }, { name: "CSS" }, ,],
       image: "/assets/Screenshot (239).png",
       live: "https://trello-teal-eta.vercel.app/",
@@ -53,6 +54,17 @@ const Work = () => {
       stack: [{ name: "React" }, { name: "CSS" }, ,],
       image: "/assets/Screenshot (241).png",
       live: "https://natours-self-beta.vercel.app/",
+      github: "https://github.com/ayoolasam/Natours",
+    },
+    {
+      num: "04",
+      category: "Acada Power",
+      title: "Acada Power ",
+      Description:
+        "Designed and developed a comprehensive and user-friendly school management platform, streamlining administrative tasks, student management, and communication between teachers, students, and parents. The platform features intuitive navigation, dynamic dashboards, and responsive layouts to enhance accessibility and efficiency across devices..",
+      stack: [{ name: "Nuxtjs" }, { name: "Tailwind-Css" }, { name: "Vue.js" }],
+      image: "/assets/Screenshot (260).png",
+      live: "https://acadapower.com/",
       github: "https://github.com/ayoolasam/Natours",
     },
   ];
