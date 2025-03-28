@@ -61,7 +61,7 @@ const Work = () => {
       category: "Acada Power",
       title: "Acada Power ",
       Description:
-        "Designed and developed a comprehensive and user-friendly school management platform, streamlining administrative tasks, student management, and communication between teachers, students, and parents. The platform features intuitive navigation, dynamic dashboards, and responsive layouts to enhance accessibility and efficiency across devices..",
+        "Collaborated with a team to design and develop a user-friendly and efficient website for a school management platform. The platform streamlines administrative tasks, student enrollment, and communication between stakeholders. Key features include intuitive navigation, dynamic dashboards, and a responsive design for accessibility across all devices.",
       stack: [{ name: "Nuxtjs" }, { name: "Tailwind-Css" }, { name: "Vue.js" }],
       image: "/assets/Screenshot (260).png",
       live: "https://acadapower.com/",

@@ -56,7 +56,7 @@ const Stats = () => {
       text: "Years Of Experience",
     },
     {
-      num: repos,
+      num: 5,
       text: "Projects Completed",
     },
     {
