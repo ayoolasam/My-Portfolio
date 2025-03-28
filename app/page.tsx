@@ -24,14 +24,14 @@ export default function Home() {
               efficient solutions.
             </p>
             <div className="flex flex-col mt-4   xl:flex-row items-center gap-8">
-              <Button
+              {/* <Button
                 variant="outline"
                 size="lg"
                 className="uppercase  flex items-center gap-2"
               >
                 <span>Download Cv</span>
                 <FiDownload className="text-xl" />
-              </Button>
+              </Button> */}
               <div className="mb-8 xl:mb-0">
                 <Socials />
               </div>
