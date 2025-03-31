@@ -18,46 +18,11 @@ import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const Work = () => {
   const projects = [
+
+
+
     {
       num: "01",
-      category: "Full Stack",
-      title: "Event Management Platform",
-      Description:
-        "A full-stack event management application designed to simplify the process of organizing, booking, and managing events. The platform features dedicated user and admin functionalities, offering seamless experiences for both event attendees and administrators. Users can explore upcoming events, register, and manage bookings, while administrators have tools to create, update, and monitor events effectively. Built with Nuxt.js, Tailwind CSS, Node.js, Express, and MongoDB, this application is responsive, secure, and performance-oriented. Deployed on Vercel for fast and reliable hosting.",
-      stack: [
-        { name: "Nuxt.js" },
-        { name: "Tailwind CSS" },
-        { name: "Node.js" },
-        { name: "Express" },
-      ],
-      image: "/assets/Screenshot (228).png",
-      live: "https://ayoolaevents.vercel.app",
-      github: "https://github.com/ayoolasam/event-management-nuxt",
-    },
-    {
-      num: "02",
-      category: "Frontend",
-      title: "Trello Hotels Landing Page",
-      Description:
-        "Designed and developed an elegant and conversion-focused landing page for a luxury hotel, aimed at attracting guests and driving bookings. The design combines modern aesthetics with intuitive functionality to create a seamless user experience.",
-      stack: [{ name: "React" }, { name: "CSS" }, ,],
-      image: "/assets/Screenshot (239).png",
-      live: "https://trello-teal-eta.vercel.app/",
-      github: "https://github.com/ayoolasam/trello",
-    },
-    {
-      num: "03",
-      category: "Frontend",
-      title: "Natours Landing Page",
-      Description:
-        "Designed and developed a visually captivating and user-friendly landing page for a tourism website, aimed at inspiring travelers and simplifying trip planning. The design features stunning imagery, intuitive navigation, and responsive layouts to ensure a seamless experience across devices.",
-      stack: [{ name: "React" }, { name: "CSS" }, ,],
-      image: "/assets/Screenshot (241).png",
-      live: "https://natours-self-beta.vercel.app/",
-      github: "https://github.com/ayoolasam/Natours",
-    },
-    {
-      num: "04",
       category: "Acada Power",
       title: "Acada Power ",
       Description:
@@ -67,6 +32,56 @@ const Work = () => {
       live: "https://acadapower.com/",
       github: "https://github.com/ayoolasam/Natours",
     },
+    {
+      num: "02",
+      category: "Full Stack Project",
+      title: "ShopCart",
+      Description:" Designed and developed a full-stack eCommerce platform for purchasing shoes using Nuxt.js on the frontend and Express.js on the backend. Integrated Paystack for secure payment processing, ensuring a seamless checkout experience. The platform features dynamic product displays, secure user authentication, an intuitive cart system, and an order tracking feature. Built an admin dashboard for managing inventory and processing orders, with a fully responsive UI for optimal usability across devices.",
+      stack: [{ name: "Nuxtjs" }, { name: "Tailwind-Css" }, { name: "Vue.js" },{ name: "Express.js" },{ name: "Node.js" }],
+      image: "/assets/Screenshot (262).png",
+      live: "https://shop--cart.vercel.app/",
+      github: "https://github.com/ayoolasam/shopcart-nuxt",
+    },
+    {
+      num: "03",
+      category: "Full Stack",
+      title: "Event Management Platform",
+      Description:
+        "A full-stack event management application designed to simplify the process of organizing, booking, and managing events. The platform features dedicated user and admin functionalities, offering seamless experiences for both event attendees and administrators. Users can explore upcoming events, register, and manage bookings, while administrators have tools to create, update, and monitor events effectively. Built with Nuxt.js, Tailwind CSS, Node.js, Express, and MongoDB, this application is responsive, secure, and performance-oriented. Deployed on Vercel for fast and reliable hosting.",
+      stack: [
+        { name: "Nuxt.js" },
+        { name: "TailwindCSS" },
+        { name: "Node.js" },
+        { name: "Express" },
+      ],
+      image: "/assets/Screenshot (228).png",
+      live: "https://ayoolaevents.vercel.app",
+      github: "https://github.com/ayoolasam/event-management-nuxt",
+    },
+    {
+      num: "04",
+      category: "Frontend",
+      title: "Trello Hotels Landing Page",
+      Description:
+        "Designed and developed an elegant and conversion-focused landing page for a luxury hotel, aimed at attracting guests and driving bookings. The design combines modern aesthetics with intuitive functionality to create a seamless user experience.",
+      stack: [{ name: "React" }, { name: "CSS" }, ,],
+      image: "/assets/Screenshot (239).png",
+      live: "https://trello-teal-eta.vercel.app/",
+      github: "https://github.com/ayoolasam/trello",
+    },
+  
+    {
+      num: "05",
+      category: "Frontend",
+      title: "Natours Landing Page",
+      Description:
+        "Designed and developed a visually captivating and user-friendly landing page for a tourism website, aimed at inspiring travelers and simplifying trip planning. The design features stunning imagery, intuitive navigation, and responsive layouts to ensure a seamless experience across devices.",
+      stack: [{ name: "React" }, { name: "CSS" }, ,],
+      image: "/assets/Screenshot (241).png",
+      live: "https://natours-self-beta.vercel.app/",
+      github: "https://github.com/ayoolasam/Natours",
+    },
+ 
   ];
   const [project, setProject] = useState(projects[0]);
 
