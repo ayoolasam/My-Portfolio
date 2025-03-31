@@ -34,7 +34,7 @@ const Work = () => {
     },
     {
       num: "02",
-      category: "Full Stack Project",
+      category: "Full Stack ",
       title: "ShopCart",
       Description:" Designed and developed a full-stack eCommerce platform for purchasing shoes using Nuxt.js on the frontend and Express.js on the backend. Integrated Paystack for secure payment processing, ensuring a seamless checkout experience. The platform features dynamic product displays, secure user authentication, an intuitive cart system, and an order tracking feature. Built an admin dashboard for managing inventory and processing orders, with a fully responsive UI for optimal usability across devices.",
       stack: [{ name: "Nuxtjs" }, { name: "Tailwind-Css" }, { name: "Vue.js" },{ name: "Express.js" },{ name: "Node.js" }],
