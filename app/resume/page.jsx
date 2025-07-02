@@ -64,12 +64,12 @@ const education = {
     {
       institution: "University Of Lagos",
       course: "Surveying And Geoinformatics ",
-      duration: "2018-2025",
+      duration: "2019-2025",
     },
     {
       institution: "GoMyCode",
       course: "Full Stack Development Bootcamp",
-      duration: "December 2023 - April 2024",
+      duration: "2023 - 2024",
     },
   ],
 };
@@ -133,17 +133,22 @@ const experience = {
     {
       company: "GoMyCode",
       position: "Full Stack Development Bootcamp",
-      duration: "December 2023 - April 2024",
+      duration: "2023 -  2024",
     },
     {
       company: "Krystal Digital Solutions",
       position: "Frontend Intern",
-      duration: "October 2024",
+      duration: "july 2024 - September 2024",
     },
     {
       company: "Acada Power",
       position: "Frontend Developer",
-      duration: "August 2024 - January 2025",
+      duration: "August 2023 - June 2024",
+    },
+    {
+      company: "X devs",
+      position: "Frontend (Intern)",
+      duration: "August 2023 - May 2024",
     },
   ],
 };
