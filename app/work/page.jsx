@@ -18,10 +18,26 @@ import WorkSliderBtns from "../../components/WorkSliderBtns";
 
 const Work = () => {
   const projects = [
- {
+     {
       num: "01",
       category: "Frontend",
-      title: "Tech Career Website",
+      title: "OneTix",
+   Description:
+  "Built the frontend for OneTix, an event ticketing platform used for competitions and shows; developed with Nuxt 3, TypeScript, and Tailwind CSS, featuring responsive UI components, secure checkout flows, and seamless ticket purchase experiences.",
+
+      stack: [
+        { name: "Nuxt.js" },
+        { name: "TailwindCSS" },
+      ],
+      image: "/assets/onetix.png",
+      live: "https://onetix.app",
+       github: "https://github.com/ayoolasam/",
+
+    },
+ {
+      num: "02",
+      category: "Frontend",
+      title: "Aidrr",
       Description:
         "Developed a tech career guidance platform that recommends career paths, offers personalized coaching sessions, and delivers structured learning plans; built with Nuxt 3, TypeScript, and Tailwind CSS, with dynamic UI components, form validations, and seamless booking and payment workflows.",
       stack: [
@@ -34,7 +50,7 @@ const Work = () => {
 
     },
     {
-      num: "02",
+      num: "03",
       category: "Acada Power",
       title: "Acada Power ",
       Description:
@@ -46,7 +62,7 @@ const Work = () => {
     },
     
     {
-      num: "03",
+      num: "04",
       category: "Full Stack ",
       title: "ShopCart",
       Description:" Designed and developed a full-stack eCommerce platform for purchasing shoes using Nuxt.js on the frontend and Express.js on the backend. Integrated Paystack for secure payment processing, ensuring a seamless checkout experience. The platform features dynamic product displays, secure user authentication, an intuitive cart system, and an order tracking feature. Built an admin dashboard for managing inventory and processing orders, with a fully responsive UI for optimal usability across devices.",
@@ -56,7 +72,7 @@ const Work = () => {
       github: "https://github.com/ayoolasam/shopcart-nuxt",
     },
     {
-      num: "04",
+      num: "05",
       category: "Full Stack",
       title: "Event Management Platform",
       Description:
@@ -72,7 +88,7 @@ const Work = () => {
       github: "https://github.com/ayoolasam/event-management-nuxt",
     },
     {
-      num: "05",
+      num: "06",
       category: "Frontend",
       title: "Trello Hotels Landing Page",
       Description:
@@ -84,7 +100,7 @@ const Work = () => {
     },
   
     {
-      num: "06",
+      num: "07",
       category: "Frontend",
       title: "Natours Landing Page",
       Description:
