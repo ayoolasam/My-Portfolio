@@ -3,7 +3,8 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "../components/PageTransition";
-import StairEffect from "@/components/StairEffect";
+import StairEffect from "@/components/StairEffect";{}
+import {Toaster} from 'sonner'
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
         <Header />
         <StairEffect />
         <PageTransition>{children}</PageTransition>
+        <Toaster position="top-right" richColors />
       </body>
     </html>
   );

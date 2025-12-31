@@ -130,26 +130,34 @@ const experience = {
   description:
     "I have honed my skills through diverse experiences in full-stack development and frontend engineering. From immersive bootcamps to industry roles, I have consistently delivered high-quality solutions that prioritize user experience and performance. My journey reflects a commitment to continuous learning and contributing effectively to dynamic teams.",
   items: [
-    {
-      company: "GoMyCode",
-      position: "Full Stack Development Bootcamp",
-      duration: "2023 -  2024",
+     {
+      company: "One Tix",
+      position: "Frontend enginner",
+      duration: "May 2025 - September 2025",
     },
+     {
+      company: "X devs",
+      position: "Frontend Engineer",
+      duration: "April 2025 - November 2025",
+    },
+
     {
       company: "Krystal Digital Solutions",
       position: "Frontend Intern",
-      duration: "july 2024 - September 2024",
+      duration: "October 2024 - November 2024",
     },
     {
       company: "Acada Power",
       position: "Frontend Developer",
-      duration: "August 2023 - June 2024",
+      duration: "May 2024 - December 2024",
     },
-    {
-      company: "X devs",
-      position: "Frontend (Intern)",
-      duration: "August 2023 - May 2024",
+       {
+      company: "GoMyCode",
+      position: "Full Stack Development Bootcamp",
+      duration: "November 2023 - April 2024",
     },
+   
+    
   ],
 };
 
