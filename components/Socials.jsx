@@ -4,14 +4,17 @@ import {
   FaYoutube,
   FaTwitter,
   FaWhatsapp,
-} from "react-icons/fa";
-import Link from "next/link";
+} from 'react-icons/fa';
+import Link from 'next/link';
 
 const socials = [
-  { icon: <FaGithub />, path: "https://github.com/ayoolasam" },
-  { icon: <FaLinkedin />, path: "https://linkedin.com/in/obayomi-samuel-2a250b2a5" },
-  { icon: <FaWhatsapp />, path: "" },
-  { icon: <FaTwitter />, path: "#" },
+  { icon: <FaGithub />, path: 'https://github.com/ayoolasam' },
+  {
+    icon: <FaLinkedin />,
+    path: 'https://linkedin.com/in/obayomi-samuel-2a250b2a5',
+  },
+  { icon: <FaWhatsapp />, path: '' },
+  { icon: <FaTwitter />, path: '#' },
 ];
 
 const Socials = () => {

@@ -1,22 +1,22 @@
-"use client";
-import { BsArrowDownRight } from "react-icons/bs";
-import Link from "next/link";
-import { motion } from "framer-motion";
+'use client';
+import { BsArrowDownRight } from 'react-icons/bs';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 const services = [
   {
-    num: "01",
-    title: "Frontend Development",
+    num: '01',
+    title: 'Frontend Development',
     description:
-      "I specialize in creating responsive and dynamic user interfaces using modern frameworks like Vue.js, and Nuxt.js, React, Next.js. My focus is on delivering seamless user experiences with clean, maintainable code",
-    href: "",
+      'I specialize in creating responsive and dynamic user interfaces using modern frameworks like Vue.js, and Nuxt.js, React, Next.js. My focus is on delivering seamless user experiences with clean, maintainable code',
+    href: '',
   },
   {
-    num: "02",
-    title: "Backend Development",
+    num: '02',
+    title: 'Backend Development',
     description:
-      "With expertise in Node.js and Express, I build scalable and efficient backend systems. I ensure robust APIs and seamless integration with databases for end-to-end functionality in web applications.",
-    href: "",
+      'With expertise in Node.js and Express, I build scalable and efficient backend systems. I ensure robust APIs and seamless integration with databases for end-to-end functionality in web applications.',
+    href: '',
   },
 ];
 
@@ -31,7 +31,7 @@ const Services = () => {
             transition: {
               delay: 2.4,
               duration: 0.4,
-              ease: "easeIn",
+              ease: 'easeIn',
             },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"

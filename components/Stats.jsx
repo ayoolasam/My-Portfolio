@@ -1,7 +1,7 @@
-"use client";
-import CountUp from "react-countup";
+'use client';
+import CountUp from 'react-countup';
 
-import axios from "axios";
+import axios from 'axios';
 
 const Stats = () => {
   // const [commits, setCommits] = useState(null);
@@ -52,15 +52,15 @@ const Stats = () => {
   const stats = [
     {
       num: 2,
-      text: "Years Of Experience",
+      text: 'Years Of Experience',
     },
     {
       num: 5,
-      text: "Projects Completed",
+      text: 'Projects Completed',
     },
     {
       num: 15,
-      text: "Technologies Mastered",
+      text: 'Technologies Mastered',
     },
     // {
     //   num: commits,
@@ -71,8 +71,7 @@ const Stats = () => {
   return (
     <div className="container mx-auto">
       <div className="xl:grid-cols-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center  mx-auto xl:max-w-none">
-      {
-       stats.map((stat, index) => {
+        {stats.map((stat, index) => {
           return (
             <div
               key={index}
@@ -86,16 +85,14 @@ const Stats = () => {
               />
               <p
                 className={`${
-                  stat.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
+                  stat.text.length < 15 ? 'max-w-[100px]' : 'max-w-[150px]'
                 } leading-snug text-white/80`}
               >
                 {stat.text}
               </p>
             </div>
           );
-        })
-      }
-        
+        })}
       </div>
     </div>
   );

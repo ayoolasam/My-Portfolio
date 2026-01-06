@@ -1,116 +1,124 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import { BsArrowUpRight, BsGithub } from 'react-icons/bs';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip";
+} from '@/components/ui/tooltip';
 
-import Link from "next/link";
-import Image from "next/image";
-import WorkSliderBtns from "../../components/WorkSliderBtns";
+import Link from 'next/link';
+import Image from 'next/image';
+import WorkSliderBtns from '../../components/WorkSliderBtns';
 
 const Work = () => {
   const projects = [
-     {
-      num: "01",
-      category: "Frontend",
-      title: "OneTix",
-   Description:
-  "Built the frontend for OneTix, an event ticketing platform used for competitions and shows; developed with Nuxt 3, TypeScript, and Tailwind CSS, featuring responsive UI components, secure checkout flows, and seamless ticket purchase experiences.",
+    {
+      num: '01',
+      category: 'Frontend',
+      title: 'OneTix',
+      Description:
+        'Built the frontend for OneTix, an event ticketing platform used for competitions and shows; developed with Nuxt 3, TypeScript, and Tailwind CSS, featuring responsive UI components, secure checkout flows, and seamless ticket purchase experiences.',
 
+      stack: [{ name: 'Nuxt.js' }, { name: 'TailwindCSS' }],
+      image: '/assets/onetix.png',
+      live: 'https://onetix.app',
+      github: 'https://github.com/ayoolasam/',
+    },
+    {
+      num: '02',
+      category: 'Frontend',
+      title: 'Aidrr',
+      Description:
+        'Developed a tech career guidance platform that recommends career paths, offers personalized coaching sessions, and delivers structured learning plans; built with Nuxt 3, TypeScript, and Tailwind CSS, with dynamic UI components, form validations, and seamless booking and payment workflows.',
+      stack: [{ name: 'Nuxt.js' }, { name: 'TailwindCSS' }],
+      image: '/assets/AidrrFront.png',
+      live: 'https://aidrr.com',
+      github: 'https://github.com/ayoolasam/',
+    },
+    {
+      num: '03',
+      category: 'Acada Power',
+      title: 'Acada Power ',
+      Description:
+        'Collaborated with a team to design and develop a user-friendly and efficient website for a school management platform. The platform streamlines administrative tasks, student enrollment, and communication between stakeholders. Key features include intuitive navigation, dynamic dashboards, and a responsive design for accessibility across all devices.',
+      stack: [{ name: 'Nuxtjs' }, { name: 'Tailwind-Css' }, { name: 'Vue.js' }],
+      image: '/assets/Screenshot (260).png',
+      live: 'https://acadapower.com/',
+      github: 'https://github.com/ayoolasam/Natours',
+    },
+    {
+      num: '04',
+      category: 'Coin Pulse',
+      title: 'Coin Pulse',
+      Description:
+        'Coin Pulse is a modern cryptocurrency analytics dashboard built to provide market insights and an intuitive overview of digital assets. The platform features  price tracking, interactive candlestick charts, category-based market analysis, coin converters, and paginated market listings. It emphasizes performance, clean UI/UX, and responsiveness, enabling users to explore crypto trends, market caps, volumes, and price movements seamlessly across devices.',
       stack: [
-        { name: "Nuxt.js" },
-        { name: "TailwindCSS" },
+        { name: 'Next.js' },
+        { name: 'React' },
+        { name: 'Tailwind CSS' },
+        { name: 'TypeScript' },
+        { name: 'CoinGecko API' },
       ],
-      image: "/assets/onetix.png",
-      live: "https://onetix.app",
-       github: "https://github.com/ayoolasam/",
+      image: '/assets/CoinPulse.png',
+      live: 'https://coin-pulse-rosy.vercel.app/',
+      github: 'https://github.com/ayoolasam/Coin-Pulse',
+    },
 
-    },
- {
-      num: "02",
-      category: "Frontend",
-      title: "Aidrr",
+    // {
+    //   num: "04",
+    //   category: "Full Stack ",
+    //   title: "ShopCart",
+    //   Description:" Designed and developed a full-stack eCommerce platform for purchasing shoes using Nuxt.js on the frontend and Express.js on the backend. Integrated Paystack for secure payment processing, ensuring a seamless checkout experience. The platform features dynamic product displays, secure user authentication, an intuitive cart system, and an order tracking feature. Built an admin dashboard for managing inventory and processing orders, with a fully responsive UI for optimal usability across devices.",
+    //   stack: [{ name: "Nuxtjs" }, { name: "Tailwind-Css" }, { name: "Vue.js" },{ name: "Express.js" },{ name: "Node.js" }],
+    //   image: "/assets/Screenshot (262).png",
+    //   live: "https://shop--cart.vercel.app/",
+    //   github: "https://github.com/ayoolasam/shopcart-nuxt",
+    // },
+    // {
+    //   num: "05",
+    //   category: "Full Stack",
+    //   title: "Event Management Platform",
+    //   Description:
+    //     "A full-stack event management application designed to simplify the process of organizing, booking, and managing events. The platform features dedicated user and admin functionalities, offering seamless experiences for both event attendees and administrators. Users can explore upcoming events, register, and manage bookings, while administrators have tools to create, update, and monitor events effectively. Built with Nuxt.js, Tailwind CSS, Node.js, Express, and MongoDB, this application is responsive, secure, and performance-oriented. Deployed on Vercel for fast and reliable hosting.",
+    //   stack: [
+    //     { name: "Nuxt.js" },
+    //     { name: "TailwindCSS" },
+    //     { name: "Node.js" },
+    //     { name: "Express" },
+    //   ],
+    //   image: "/assets/Screenshot (228).png",
+    //   live: "https://ayoolaevents.vercel.app",
+    //   github: "https://github.com/ayoolasam/event-management-nuxt",
+    // },
+    {
+      num: '05',
+      category: 'Frontend',
+      title: 'Trello Hotels Landing Page',
       Description:
-        "Developed a tech career guidance platform that recommends career paths, offers personalized coaching sessions, and delivers structured learning plans; built with Nuxt 3, TypeScript, and Tailwind CSS, with dynamic UI components, form validations, and seamless booking and payment workflows.",
-      stack: [
-        { name: "Nuxt.js" },
-        { name: "TailwindCSS" },
-      ],
-      image: "/assets/AidrrFront.png",
-      live: "https://aidrr.com",
-       github: "https://github.com/ayoolasam/",
+        'Designed and developed an elegant and conversion-focused landing page for a luxury hotel, aimed at attracting guests and driving bookings. The design combines modern aesthetics with intuitive functionality to create a seamless user experience.',
+      stack: [{ name: 'React' }, { name: 'CSS' }, ,],
+      image: '/assets/Screenshot (239).png',
+      live: 'https://trello-teal-eta.vercel.app/',
+      github: 'https://github.com/ayoolasam/trello',
+    },
 
-    },
     {
-      num: "03",
-      category: "Acada Power",
-      title: "Acada Power ",
+      num: '06',
+      category: 'Frontend',
+      title: 'Natours Landing Page',
       Description:
-        "Collaborated with a team to design and develop a user-friendly and efficient website for a school management platform. The platform streamlines administrative tasks, student enrollment, and communication between stakeholders. Key features include intuitive navigation, dynamic dashboards, and a responsive design for accessibility across all devices.",
-      stack: [{ name: "Nuxtjs" }, { name: "Tailwind-Css" }, { name: "Vue.js" }],
-      image: "/assets/Screenshot (260).png",
-      live: "https://acadapower.com/",
-      github: "https://github.com/ayoolasam/Natours",
+        'Designed and developed a visually captivating and user-friendly landing page for a tourism website, aimed at inspiring travelers and simplifying trip planning. The design features stunning imagery, intuitive navigation, and responsive layouts to ensure a seamless experience across devices.',
+      stack: [{ name: 'React' }, { name: 'CSS' }, ,],
+      image: '/assets/Screenshot (241).png',
+      live: 'https://natours-self-beta.vercel.app/',
+      github: 'https://github.com/ayoolasam/Natours',
     },
-    
-    {
-      num: "04",
-      category: "Full Stack ",
-      title: "ShopCart",
-      Description:" Designed and developed a full-stack eCommerce platform for purchasing shoes using Nuxt.js on the frontend and Express.js on the backend. Integrated Paystack for secure payment processing, ensuring a seamless checkout experience. The platform features dynamic product displays, secure user authentication, an intuitive cart system, and an order tracking feature. Built an admin dashboard for managing inventory and processing orders, with a fully responsive UI for optimal usability across devices.",
-      stack: [{ name: "Nuxtjs" }, { name: "Tailwind-Css" }, { name: "Vue.js" },{ name: "Express.js" },{ name: "Node.js" }],
-      image: "/assets/Screenshot (262).png",
-      live: "https://shop--cart.vercel.app/",
-      github: "https://github.com/ayoolasam/shopcart-nuxt",
-    },
-    {
-      num: "05",
-      category: "Full Stack",
-      title: "Event Management Platform",
-      Description:
-        "A full-stack event management application designed to simplify the process of organizing, booking, and managing events. The platform features dedicated user and admin functionalities, offering seamless experiences for both event attendees and administrators. Users can explore upcoming events, register, and manage bookings, while administrators have tools to create, update, and monitor events effectively. Built with Nuxt.js, Tailwind CSS, Node.js, Express, and MongoDB, this application is responsive, secure, and performance-oriented. Deployed on Vercel for fast and reliable hosting.",
-      stack: [
-        { name: "Nuxt.js" },
-        { name: "TailwindCSS" },
-        { name: "Node.js" },
-        { name: "Express" },
-      ],
-      image: "/assets/Screenshot (228).png",
-      live: "https://ayoolaevents.vercel.app",
-      github: "https://github.com/ayoolasam/event-management-nuxt",
-    },
-    {
-      num: "06",
-      category: "Frontend",
-      title: "Trello Hotels Landing Page",
-      Description:
-        "Designed and developed an elegant and conversion-focused landing page for a luxury hotel, aimed at attracting guests and driving bookings. The design combines modern aesthetics with intuitive functionality to create a seamless user experience.",
-      stack: [{ name: "React" }, { name: "CSS" }, ,],
-      image: "/assets/Screenshot (239).png",
-      live: "https://trello-teal-eta.vercel.app/",
-      github: "https://github.com/ayoolasam/trello",
-    },
-  
-    {
-      num: "07",
-      category: "Frontend",
-      title: "Natours Landing Page",
-      Description:
-        "Designed and developed a visually captivating and user-friendly landing page for a tourism website, aimed at inspiring travelers and simplifying trip planning. The design features stunning imagery, intuitive navigation, and responsive layouts to ensure a seamless experience across devices.",
-      stack: [{ name: "React" }, { name: "CSS" }, ,],
-      image: "/assets/Screenshot (241).png",
-      live: "https://natours-self-beta.vercel.app/",
-      github: "https://github.com/ayoolasam/Natours",
-    },
- 
   ];
   const [project, setProject] = useState(projects[0]);
 
@@ -124,7 +132,7 @@ const Work = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 2.4, duration: 0.4, ease: 'easeIn' },
       }}
       className="min-h-[88vh] flex flex-col justify-center py-12 xl:px-0"
     >
@@ -136,7 +144,7 @@ const Work = () => {
                 {project.num}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title}
               </h2>
               <p className="text-white/68">{project.Description}</p>
               <ul className="flex gap-4 mt-4 flex-col xl:flex-row text-center">
@@ -144,7 +152,7 @@ const Work = () => {
                   return (
                     <li key={index} className="text-xl text-accent">
                       {item.name}
-                      {index != project.stack.length - 1 && ","}
+                      {index != project.stack.length - 1 && ','}
                     </li>
                   );
                 })}

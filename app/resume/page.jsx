@@ -1,163 +1,161 @@
-"use client";
+'use client';
 
-import { FaHtml5, FaCss3, FaVuejs, FaNodeJs } from "react-icons/fa";
+import { FaHtml5, FaCss3, FaVuejs, FaNodeJs } from 'react-icons/fa';
 import {
   SiTailwindcss,
   SiNuxtdotjs,
   SiExpress,
   SiNextdotjs,
   SiReact,
-} from "react-icons/si";
+} from 'react-icons/si';
 import {
   Tabs,
   TabsContent,
   TabsList,
   TabsTrigger,
-} from "../../components/ui/tabs";
+} from '../../components/ui/tabs';
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@radix-ui/react-tooltip";
-import { ScrollArea } from "../../components/ui/scroll-area";
-import { motion } from "framer-motion";
+} from '@radix-ui/react-tooltip';
+import { ScrollArea } from '../../components/ui/scroll-area';
+import { motion } from 'framer-motion';
 
 const about = {
-  title: "About me",
+  title: 'About me',
   description:
     "Hello! I'm Obayomi Ayoola, a tech enthusiast with a passion for crafting digital experiences that leave a lasting impact. Whether it's designing elegant frontend interfaces or building powerful backend systems, I love turning ideas into innovative solutions. With a blend of creativity, precision, and two years of hands-on experience, I’m always ready to tackle the next big challenge and bring visions to life.",
   info: [
     {
-      fieldName: "Name",
-      fieldValue: "Obayomi Ayoola",
+      fieldName: 'Name',
+      fieldValue: 'Obayomi Ayoola',
     },
     {
-      fieldName: "Phone",
-      fieldValue: "090 783 297 26",
+      fieldName: 'Phone',
+      fieldValue: '090 783 297 26',
     },
     {
-      fieldName: "Experience",
-      fieldValue: "2 Years",
+      fieldName: 'Experience',
+      fieldValue: '2 Years',
     },
     {
-      fieldName: "FreeLance",
-      fieldValue: "Available",
+      fieldName: 'FreeLance',
+      fieldValue: 'Available',
     },
     {
-      fieldName: "Email",
-      fieldValue: "obayomisamuel2403@gmail.com",
+      fieldName: 'Email',
+      fieldValue: 'obayomisamuel2403@gmail.com',
     },
     {
-      fieldName: "Languages",
-      fieldValue: "English",
+      fieldName: 'Languages',
+      fieldValue: 'English',
     },
   ],
 };
 
 const education = {
-  icon: "",
-  title: "My Education",
+  icon: '',
+  title: 'My Education',
   description:
-    "My educational journey reflects a strong foundation in technical and engineering principles, complemented by hands-on training in modern development technologies. This blend of academic and practical experience has equipped me to solve real-world challenges effectively.",
+    'My educational journey reflects a strong foundation in technical and engineering principles, complemented by hands-on training in modern development technologies. This blend of academic and practical experience has equipped me to solve real-world challenges effectively.',
   items: [
     {
-      institution: "University Of Lagos",
-      course: "Surveying And Geoinformatics ",
-      duration: "2019-2025",
+      institution: 'University Of Lagos',
+      course: 'Surveying And Geoinformatics ',
+      duration: '2019-2025',
     },
     {
-      institution: "GoMyCode",
-      course: "Full Stack Development Bootcamp",
-      duration: "2023 - 2024",
+      institution: 'GoMyCode',
+      course: 'Full Stack Development Bootcamp',
+      duration: '2023 - 2024',
     },
   ],
 };
 
 const skills = {
-  icon: "",
-  title: "My Skills",
+  icon: '',
+  title: 'My Skills',
   description:
-    "I bring a diverse skill set to the table, combining frontend and backend development expertise. My strengths lie in crafting responsive user interfaces, building scalable backend systems, and collaborating with teams to deliver exceptional digital experiences.",
+    'I bring a diverse skill set to the table, combining frontend and backend development expertise. My strengths lie in crafting responsive user interfaces, building scalable backend systems, and collaborating with teams to deliver exceptional digital experiences.',
   skillList: [
     {
       icon: <FaHtml5 />,
 
-      name: "html 5",
+      name: 'html 5',
     },
     {
       icon: <FaCss3 />,
 
-      name: "Css 3",
+      name: 'Css 3',
     },
     {
       icon: <SiNuxtdotjs />,
 
-      name: "Nuxt js",
+      name: 'Nuxt js',
     },
     {
       icon: <SiNextdotjs />,
 
-      name: "Next js",
+      name: 'Next js',
     },
 
     {
       icon: <FaVuejs />,
 
-      name: "Vue js",
+      name: 'Vue js',
     },
     {
       icon: <FaNodeJs />,
 
-      name: "Node js",
+      name: 'Node js',
     },
     {
       icon: <SiTailwindcss />,
 
-      name: "TailWind Css",
+      name: 'TailWind Css',
     },
     {
       icon: <SiReact />,
 
-      name: "React js",
+      name: 'React js',
     },
   ],
 };
 
 const experience = {
-  icon: "",
-  title: "My Experience",
+  icon: '',
+  title: 'My Experience',
   description:
-    "I have honed my skills through diverse experiences in full-stack development and frontend engineering. From immersive bootcamps to industry roles, I have consistently delivered high-quality solutions that prioritize user experience and performance. My journey reflects a commitment to continuous learning and contributing effectively to dynamic teams.",
+    'I have honed my skills through diverse experiences in full-stack development and frontend engineering. From immersive bootcamps to industry roles, I have consistently delivered high-quality solutions that prioritize user experience and performance. My journey reflects a commitment to continuous learning and contributing effectively to dynamic teams.',
   items: [
-     {
-      company: "One Tix",
-      position: "Frontend enginner",
-      duration: "May 2025 - September 2025",
+    {
+      company: 'One Tix',
+      position: 'Frontend enginner',
+      duration: 'May 2025 - September 2025',
     },
-     {
-      company: "X devs",
-      position: "Frontend Engineer",
-      duration: "April 2025 - November 2025",
+    {
+      company: 'X devs',
+      position: 'Frontend Engineer',
+      duration: 'April 2025 - November 2025',
     },
 
     {
-      company: "Krystal Digital Solutions",
-      position: "Frontend Intern",
-      duration: "October 2024 - November 2024",
+      company: 'Krystal Digital Solutions',
+      position: 'Frontend Intern',
+      duration: 'October 2024 - November 2024',
     },
     {
-      company: "Acada Power",
-      position: "Frontend Developer",
-      duration: "May 2024 - December 2024",
+      company: 'Acada Power',
+      position: 'Frontend Developer',
+      duration: 'May 2024 - December 2024',
     },
-       {
-      company: "GoMyCode",
-      position: "Full Stack Development Bootcamp",
-      duration: "November 2023 - April 2024",
+    {
+      company: 'GoMyCode',
+      position: 'Full Stack Development Bootcamp',
+      duration: 'November 2023 - April 2024',
     },
-   
-    
   ],
 };
 
@@ -167,7 +165,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 0.4, duration: 0.4, ease: "easeIn" },
+        transition: { delay: 0.4, duration: 0.4, ease: 'easeIn' },
       }}
       className="flex items-center min-h-[88vh] justify-center py-12 xl-py-8"
     >
@@ -278,14 +276,20 @@ const Resume = () => {
             <TabsContent value="about" className="w-full">
               <di className="flex flex-col gap-4 text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p class="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
+                <p class="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 gap-x-16 max-w-[628px] mx-auto xl:mx-0">
-                  {about.info.map((item,index)=>{
-                    return <li className="flex items-center justify-center xl:justify-start gap-4 " key="index">
-<span className="text-white/60">{item.fieldName
-  }</span>
-  <span className="text-base ">{item.fieldValue}</span>
-                    </li>
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        className="flex items-center justify-center xl:justify-start gap-4 "
+                        key="index"
+                      >
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-base ">{item.fieldValue}</span>
+                      </li>
+                    );
                   })}
                 </ul>
               </di>
